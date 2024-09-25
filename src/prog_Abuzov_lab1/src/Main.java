@@ -12,10 +12,10 @@ public class Main {
         array_filling_3(z1, x, transformed_z); // заполнение и вывод третьего массива
 
         //нижние строчки можно запустить если хочется увидеть рандомные ячейки в первых двух массивах
-        System.out.println(z[4]);
+        /*System.out.println(z[4]);
         System.out.printf("%.2f\n", x[0]);
         System.out.printf("%.2f\n", x[5]);
-        System.out.printf("%.4f", x[9]);
+        System.out.printf("%.4f", x[9]);*/
     }
 
     public static void array_filling_1(short[] z) {
