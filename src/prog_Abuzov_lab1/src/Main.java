@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.lang.Math;
 
 public class Main {
@@ -13,10 +12,10 @@ public class Main {
         array_filling_3(z1, x, transformed_z); // заполнение и вывод третьего массива
 
         //нижние строчки можно запустить если хочется увидеть рандомные ячейки в первых двух массивах
-        /*System.out.println(z[4]);
+        System.out.println(z[4]);
         System.out.printf("%.2f\n", x[0]);
         System.out.printf("%.2f\n", x[5]);
-        System.out.printf("%.4f", x[9]);*/
+        System.out.printf("%.4f", x[9]);
     }
 
     public static void array_filling_1(short[] z) {
@@ -30,9 +29,8 @@ public class Main {
     public static void array_filling_2(double[] x) {
         double max = 2.0;
         double min = -5.0;
-        Random rn = new Random();
         for(int i = 0; i < x.length; i++) {
-            double randomNum = rn.nextDouble(max - min + 1) + min;
+            double randomNum = Math.random() * (max - min) + min;
             x[i] = randomNum;
         }
     }
